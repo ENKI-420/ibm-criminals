@@ -13,9 +13,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DNA-Lang | Quantum-Biological Computing Platform",
+  title: "Quantum-Advantage.dev | z3braMesh Quantum Computing Platform",
   description:
-    "A revolutionary living software system powered by DNA-Lang biological computing paradigms and quantum mechanics.",
+    "Revolutionary quantum-advantage computing platform featuring z3braMesh node topology, iqPod deployment, and OSIRIS telemetry for biological quantum systems.",
 };
 
 export const viewport: Viewport = {
