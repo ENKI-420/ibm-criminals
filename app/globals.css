@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 4%;
+    --foreground: 160 60% 90%;
+
+    --card: 220 18% 7%;
+    --card-foreground: 160 60% 90%;
+
+    --popover: 220 18% 7%;
+    --popover-foreground: 160 60% 90%;
+
+    --primary: 160 100% 45%;
+    --primary-foreground: 220 20% 4%;
+
+    --secondary: 190 100% 40%;
+    --secondary-foreground: 220 20% 4%;
+
+    --muted: 220 15% 12%;
+    --muted-foreground: 160 10% 55%;
+
+    --accent: 190 100% 40%;
+    --accent-foreground: 220 20% 4%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 160 30% 15%;
+    --input: 160 30% 15%;
+    --ring: 160 100% 45%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom scrollbar for dark dashboard */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted));
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary) / 0.4);
+}
+
+/* Selection */
+::selection {
+  background: hsl(var(--primary) / 0.3);
+  color: hsl(var(--foreground));
+}
